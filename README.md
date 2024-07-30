@@ -32,43 +32,44 @@ Start by cloning the repository to your local machine:
 
 ```bash
 git clone https://github.com/nguyendien9203/library-mgt.git
+bash```
 
 ### II. Backend Installation
+
 1. Navigate to the backend directory:
 
-```bash
-cd library-mgt/backend
+   cd library-mgt/backend
 
 2. Install dependencies:
 
-```bash
-./mvnw install
+   ./mvnw install
 
-3. Configure the database in application.properties:
-Edit the application.properties file to set up your database connection:
+3. Configure the database in `application.properties`:
 
-```bash
-spring.datasource.url=jdbc:mysql://localhost:3306/library_db
-spring.datasource.username=root
-spring.datasource.password=password
+   spring.datasource.url=jdbc:mysql://localhost:3306/library_db
+   spring.datasource.username=root
+   spring.datasource.password=password
 
 4. Run the backend application:
 
-```bash
-./mvnw spring-boot:run
+   ./mvnw spring-boot:run
 
 ### III. Frontend Installation
+
 1. Navigate to the frontend directory:
 
-```bash
-cd ../frontend
+   cd ../frontend
 
 2. Install dependencies:
 
-```bash
-npm install
+   npm install
+
+3. Run the frontend application:
+
+   npm start
 
 3. Run the frontend application:
 
 ```bash
 npm start
+```
