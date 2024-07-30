@@ -84,6 +84,6 @@ git clone https://github.com/nguyendien9203/library-mgt.git
    
 4. Run the frontend application:
 
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
