@@ -1,0 +1,42 @@
+.benefits-list {
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .benefits-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .benefits-list li i {
+    margin-right: 5px;
+  }
+  
+  .purchase-button {
+    background-color: #F87555;
+    color: #fff;
+    font-size: small;
+    border-radius: 50px;
+    height: 35px;
+    border: none;
+  }
+  
+  .purchase-button.disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .membership-card {
+    font-size: small;
+    width: 100%;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .membership-card.subscribed {
+    border: 2px solid #6c757d;
+  }
+  

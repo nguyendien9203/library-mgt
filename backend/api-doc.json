@@ -1,0 +1,3873 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "OpenAPI definition",
+    "version": "v0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Generated server url"
+    }
+  ],
+  "paths": {
+    "/api/v1/user/update-user/{id}": {
+      "put": {
+        "tags": [
+          "user-controller"
+        ],
+        "summary": "Update user",
+        "operationId": "updateUser",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/review/update-review/{id}": {
+      "put": {
+        "tags": [
+          "review-controller"
+        ],
+        "summary": "Update review",
+        "operationId": "updateReview",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/category/update-category/{id}": {
+      "put": {
+        "tags": [
+          "category-controller"
+        ],
+        "summary": "Update category",
+        "operationId": "updateCategory",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CategoryRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{bookId}/update-book": {
+      "put": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Update book",
+        "operationId": "updateBook",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book-copy/{bookCopyId}/update-book-copy": {
+      "put": {
+        "tags": [
+          "book-copy-controller"
+        ],
+        "summary": "Update book copy",
+        "operationId": "updateBookCopy",
+        "parameters": [
+          {
+            "name": "bookCopyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookCopyRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/author/update-author/{id}": {
+      "put": {
+        "tags": [
+          "author-controller"
+        ],
+        "summary": "Update author",
+        "operationId": "updateAuthor",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthorRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/user/add-user": {
+      "post": {
+        "tags": [
+          "user-controller"
+        ],
+        "summary": "Add user",
+        "operationId": "addUser",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/review/add-review": {
+      "post": {
+        "tags": [
+          "review-controller"
+        ],
+        "summary": "Add review",
+        "operationId": "addReview",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReviewRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/returning": {
+      "post": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "returningLoan",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoanStateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/return": {
+      "post": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "returnLoan",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoanStateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/reject": {
+      "post": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "rejectLoan",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoanStateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/approve": {
+      "post": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "approveLoan",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoanStateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/": {
+      "post": {
+        "tags": [
+          "rent-controller"
+        ],
+        "summary": "rent a book",
+        "operationId": "rentBook",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RentRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/membership/update-subscription": {
+      "post": {
+        "tags": [
+          "member-sub-controller"
+        ],
+        "operationId": "updateMemberSubscription",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateMemberSubscriptionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonUpdateMemberSubscriptionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/membership/enroll-membership": {
+      "post": {
+        "tags": [
+          "member-sub-controller"
+        ],
+        "operationId": "enrollMembership",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EnrollMembershipRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonEnrollMembershipResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/membership/delete-subscription": {
+      "post": {
+        "tags": [
+          "member-sub-controller"
+        ],
+        "operationId": "deleteMemberSubscription",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteMemberSubscriptionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonDeleteMemberSubscriptionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/membership/confirm-payment": {
+      "post": {
+        "tags": [
+          "member-sub-controller"
+        ],
+        "operationId": "enrollMembership_1",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PaymentConfirmRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonPaymentConfirmResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/membership/add-subscription": {
+      "post": {
+        "tags": [
+          "member-sub-controller"
+        ],
+        "operationId": "addMemberSubscription",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddMemberSubscriptionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonAddMemberSubscriptionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/category/add-category": {
+      "post": {
+        "tags": [
+          "category-controller"
+        ],
+        "summary": "Add category",
+        "operationId": "addCategory",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CategoryRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{bookId}/upload-sample-book-images": {
+      "post": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Upload sample book images",
+        "operationId": "uploadSampleBookImages",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "files"
+                ],
+                "type": "object",
+                "properties": {
+                  "files": {
+                    "uniqueItems": true,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "binary"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{bookId}/upload-book-image": {
+      "post": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Upload book image",
+        "operationId": "uploadBookImage",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "file"
+                ],
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/add-book": {
+      "post": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Add book",
+        "operationId": "addBook",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book-copy/add-book-copy": {
+      "post": {
+        "tags": [
+          "book-copy-controller"
+        ],
+        "summary": "Add book copy",
+        "operationId": "addBookCopy",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookCopyRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/author/add-author": {
+      "post": {
+        "tags": [
+          "author-controller"
+        ],
+        "summary": "Add author",
+        "operationId": "addAuthor",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AuthorRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/verify": {
+      "post": {
+        "tags": [
+          "authentication-controller"
+        ],
+        "summary": "Verify a user",
+        "operationId": "verifyUser",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/send-otp": {
+      "post": {
+        "tags": [
+          "authentication-controller"
+        ],
+        "summary": "Send OTP to user",
+        "operationId": "sendOtp",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/reset-password": {
+      "post": {
+        "tags": [
+          "authentication-controller"
+        ],
+        "summary": "Reset password",
+        "operationId": "changePassword",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResetPasswordRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/resend-otp": {
+      "post": {
+        "tags": [
+          "authentication-controller"
+        ],
+        "summary": "Resend OTP",
+        "operationId": "resendOtp",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/register": {
+      "post": {
+        "tags": [
+          "authentication-controller"
+        ],
+        "summary": "Register a new user",
+        "operationId": "register",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/forgot-password": {
+      "post": {
+        "tags": [
+          "authentication-controller"
+        ],
+        "summary": "Check email exist",
+        "operationId": "checkEmailExist",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/authenticate": {
+      "post": {
+        "tags": [
+          "authentication-controller"
+        ],
+        "summary": "Authenticate a user",
+        "operationId": "authenticate",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/user/list-user-by-role": {
+      "get": {
+        "tags": [
+          "user-controller"
+        ],
+        "summary": "List user by role",
+        "operationId": "listUserByRole",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/user/get-user-chart": {
+      "get": {
+        "tags": [
+          "user-controller"
+        ],
+        "summary": "Get user chart",
+        "operationId": "getUserChart",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/user/get-user-by-id/{id}": {
+      "get": {
+        "tags": [
+          "user-controller"
+        ],
+        "summary": "Get user by id",
+        "operationId": "getUserById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/review/get-all-review/{id}": {
+      "get": {
+        "tags": [
+          "review-controller"
+        ],
+        "summary": "Get all review",
+        "operationId": "getAllReviews",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/getRentsByUserId": {
+      "get": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "getRentsByUserId",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonListRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/getLoansByUserIdAndStatus": {
+      "get": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "getLoansByUserIdAndStatus",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonListLoanBookResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/getAllRentWithReturningState": {
+      "get": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "getAllRentWithReturningState",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonListRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/getAllRentWithReturnState": {
+      "get": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "getAllRentWithReturnState",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonListRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/getAllRentWithRejectState": {
+      "get": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "getAllRentWithRejectState",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonListRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/getAllRentWithPendingState": {
+      "get": {
+        "tags": [
+          "rent-controller"
+        ],
+        "operationId": "getAllRentWithPendingState",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonListRentResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/get-loan-statistic": {
+      "get": {
+        "tags": [
+          "rent-controller"
+        ],
+        "summary": "get loan statistic",
+        "operationId": "getLoanStatistic",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/rent/get-daily-hourly-loan-data": {
+      "get": {
+        "tags": [
+          "rent-controller"
+        ],
+        "summary": "get daily hourly loan data",
+        "operationId": "getHourlyLoanData",
+        "parameters": [
+          {
+            "name": "date",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/payment/get-payment-user": {
+      "get": {
+        "tags": [
+          "payment-controller"
+        ],
+        "operationId": "getPaymentByUser",
+        "parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "amount",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonResponsePayment"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/payment/get-payment-url": {
+      "get": {
+        "tags": [
+          "payment-controller"
+        ],
+        "operationId": "getPaymentUrl",
+        "parameters": [
+          {
+            "name": "amount",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "memberId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonPaymentRes"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/membership/memberships": {
+      "get": {
+        "tags": [
+          "member-sub-controller"
+        ],
+        "operationId": "getAllMembershipSubscription",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonListMembershipResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/membership/is-user-subscribed": {
+      "get": {
+        "tags": [
+          "member-sub-controller"
+        ],
+        "operationId": "checkSubscriptionUser",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonBoolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/membership/check-user-subscription": {
+      "get": {
+        "tags": [
+          "member-sub-controller"
+        ],
+        "operationId": "checkSubscriptionUser_1",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "subscriptionId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseCommonBoolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/category/get-category-by-id/{id}": {
+      "get": {
+        "tags": [
+          "category-controller"
+        ],
+        "summary": "Get category by id",
+        "operationId": "getCategoryById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/category/get-all-parent-category": {
+      "get": {
+        "tags": [
+          "category-controller"
+        ],
+        "summary": "Get all parent category",
+        "operationId": "getAllParentCategories",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/category/get-all-category": {
+      "get": {
+        "tags": [
+          "category-controller"
+        ],
+        "summary": "Get all category",
+        "operationId": "getAllCategories",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{subCategoryId}/get-books-by-category-id": {
+      "get": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Get books by category id",
+        "operationId": "getBooksByCategoryId",
+        "parameters": [
+          {
+            "name": "subCategoryId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{parentCategoryId}/get-all-books-by-sub-category": {
+      "get": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Get all books by sub category and status",
+        "operationId": "getAllBooksBySubCategory",
+        "parameters": [
+          {
+            "name": "parentCategoryId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{bookId}/get-sample-book-images": {
+      "get": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Get sample book images",
+        "operationId": "getSampleBookImages",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{bookId}/get-book-image": {
+      "get": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Get book image",
+        "operationId": "getBookImage",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{bookId}/get-book-by-id": {
+      "get": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Get book by id",
+        "operationId": "getBookById",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/get-newest-books": {
+      "get": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Get newest books",
+        "operationId": "getNewestBooks",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/get-books": {
+      "get": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "get books",
+        "operationId": "getBooks",
+        "parameters": [
+          {
+            "name": "pageNo",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 0
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "minimum": 4,
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "search",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "categoryId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/get-book-by-id-auth": {
+      "get": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Get book by id",
+        "operationId": "getBookByIdAuth",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/author/get-author-by-id/{id}": {
+      "get": {
+        "tags": [
+          "author-controller"
+        ],
+        "operationId": "getAuthorById",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/author/get-all-author": {
+      "get": {
+        "tags": [
+          "author-controller"
+        ],
+        "summary": "Get all author",
+        "operationId": "getAllAuthor",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/whoami": {
+      "get": {
+        "tags": [
+          "authentication-controller"
+        ],
+        "operationId": "whoami",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/UserResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/review/delete-review/{id}": {
+      "delete": {
+        "tags": [
+          "review-controller"
+        ],
+        "summary": "Delete review",
+        "operationId": "deleteReview",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/category/delete-category/{id}": {
+      "delete": {
+        "tags": [
+          "category-controller"
+        ],
+        "summary": "Delete category",
+        "operationId": "deleteCategory",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book/{bookId}/delete-book": {
+      "delete": {
+        "tags": [
+          "book-controller"
+        ],
+        "summary": "Delete book",
+        "operationId": "deleteBook",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/book-copy/{bookCopyId}/delete-book-copy": {
+      "delete": {
+        "tags": [
+          "book-copy-controller"
+        ],
+        "summary": "Delete book copy",
+        "operationId": "deleteBookCopy",
+        "parameters": [
+          {
+            "name": "bookCopyId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/author/delete-author/{id}": {
+      "delete": {
+        "tags": [
+          "author-controller"
+        ],
+        "summary": "Delete author",
+        "operationId": "deleteAuthor",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/benefits/getBenefits": {
+      "get": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefits",
+        "operationId": "getBenefits",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefits",
+        "operationId": "getBenefits_3",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefits",
+        "operationId": "getBenefits_2",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefits",
+        "operationId": "getBenefits_5",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "options": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefits",
+        "operationId": "getBenefits_6",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefits",
+        "operationId": "getBenefits_1",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefits",
+        "operationId": "getBenefits_4",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/benefits/get-benefit/{benefitsId}": {
+      "get": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefit by id",
+        "operationId": "getBenefitById",
+        "parameters": [
+          {
+            "name": "benefitsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefit by id",
+        "operationId": "getBenefitById_3",
+        "parameters": [
+          {
+            "name": "benefitsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefit by id",
+        "operationId": "getBenefitById_2",
+        "parameters": [
+          {
+            "name": "benefitsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefit by id",
+        "operationId": "getBenefitById_5",
+        "parameters": [
+          {
+            "name": "benefitsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "options": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefit by id",
+        "operationId": "getBenefitById_6",
+        "parameters": [
+          {
+            "name": "benefitsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "head": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefit by id",
+        "operationId": "getBenefitById_1",
+        "parameters": [
+          {
+            "name": "benefitsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "benefits-controller"
+        ],
+        "summary": "Get benefit by id",
+        "operationId": "getBenefitById_4",
+        "parameters": [
+          {
+            "name": "benefitsId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseSuccessObject"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "UserRequest": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        }
+      },
+      "ResponseSuccessObject": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "ReviewRequest": {
+        "required": [
+          "bookId",
+          "rating",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bookId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rating": {
+            "maximum": 5,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "feedback": {
+            "type": "string"
+          }
+        }
+      },
+      "CategoryRequest": {
+        "required": [
+          "name",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "parentId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "BookRequest": {
+        "required": [
+          "authors",
+          "isbn",
+          "language",
+          "price",
+          "title",
+          "totalPage",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isbn": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "totalPage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "language": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "publicationYear": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "authors": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "categories": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      },
+      "BookCopyRequest": {
+        "required": [
+          "barcode",
+          "bookId",
+          "status",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "bookId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "barcode": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "AuthorRequest": {
+        "required": [
+          "name",
+          "userId"
+        ],
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "LoanStateRequest": {
+        "type": "object",
+        "properties": {
+          "loanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bookCopyId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      },
+      "BookCopyResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "barcode": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "updatedBy": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          },
+          "loanInfo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LoanInfo"
+            }
+          }
+        }
+      },
+      "LoanInfo": {
+        "type": "object",
+        "properties": {
+          "loanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      },
+      "RentResponse": {
+        "type": "object",
+        "properties": {
+          "loanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userName": {
+            "type": "string"
+          },
+          "bookCopyResponse": {
+            "$ref": "#/components/schemas/BookCopyResponse"
+          },
+          "memberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "maxBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "memFee": {
+            "type": "number",
+            "format": "double"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "borrowAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "returnAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dueDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "ResponseCommonRentResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/RentResponse"
+          }
+        }
+      },
+      "RentRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "borrowAt": {
+            "type": "string"
+          },
+          "returnAt": {
+            "type": "string"
+          },
+          "barcode": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "BenefitDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "UpdateMemberSubscriptionRequest": {
+        "type": "object",
+        "properties": {
+          "subId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "type": "string"
+          },
+          "nameSubscription": {
+            "type": "string"
+          },
+          "fee_member": {
+            "type": "number",
+            "format": "double"
+          },
+          "expireDate": {
+            "type": "string"
+          },
+          "maxBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "selectedBenefits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BenefitDTO"
+            }
+          }
+        }
+      },
+      "ResponseCommonUpdateMemberSubscriptionResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/UpdateMemberSubscriptionResponse"
+          }
+        }
+      },
+      "UpdateMemberSubscriptionResponse": {
+        "required": [
+          "message"
+        ],
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "EnrollMembershipRequest": {
+        "required": [
+          "email",
+          "membershipId"
+        ],
+        "type": "object",
+        "properties": {
+          "membershipId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "EnrollMembershipResponse": {
+        "required": [
+          "orderId",
+          "urlPayment"
+        ],
+        "type": "object",
+        "properties": {
+          "orderId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "urlPayment": {
+            "type": "string"
+          }
+        }
+      },
+      "ResponseCommonEnrollMembershipResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/EnrollMembershipResponse"
+          }
+        }
+      },
+      "DeleteMemberSubscriptionRequest": {
+        "required": [
+          "email",
+          "subscriptionId"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "subscriptionId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "DeleteMemberSubscriptionResponse": {
+        "required": [
+          "message"
+        ],
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "ResponseCommonDeleteMemberSubscriptionResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/DeleteMemberSubscriptionResponse"
+          }
+        }
+      },
+      "PaymentConfirmRequest": {
+        "required": [
+          "orderId",
+          "vnp_Amount",
+          "vnp_BankCode",
+          "vnp_BankTranNo",
+          "vnp_CardType",
+          "vnp_OrderInfo",
+          "vnp_PayDate",
+          "vnp_ResponseCode",
+          "vnp_SecureHash",
+          "vnp_TmnCode",
+          "vnp_TransactionNo",
+          "vnp_TransactionStatus",
+          "vnp_TxnRef"
+        ],
+        "type": "object",
+        "properties": {
+          "orderId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vnp_Amount": {
+            "type": "string"
+          },
+          "vnp_BankCode": {
+            "type": "string"
+          },
+          "vnp_BankTranNo": {
+            "type": "string"
+          },
+          "vnp_CardType": {
+            "type": "string"
+          },
+          "vnp_OrderInfo": {
+            "type": "string"
+          },
+          "vnp_PayDate": {
+            "type": "string"
+          },
+          "vnp_ResponseCode": {
+            "type": "string"
+          },
+          "vnp_TmnCode": {
+            "type": "string"
+          },
+          "vnp_TransactionNo": {
+            "type": "string"
+          },
+          "vnp_TransactionStatus": {
+            "type": "string"
+          },
+          "vnp_TxnRef": {
+            "type": "string"
+          },
+          "vnp_SecureHash": {
+            "type": "string"
+          }
+        }
+      },
+      "PaymentConfirmResponse": {
+        "required": [
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "ResponseCommonPaymentConfirmResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/PaymentConfirmResponse"
+          }
+        }
+      },
+      "AddMemberSubscriptionRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "nameSubscription": {
+            "type": "string"
+          },
+          "fee_member": {
+            "type": "number",
+            "format": "double"
+          },
+          "expireDate": {
+            "type": "string"
+          },
+          "maxBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "selectedBenefits": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "AddMemberSubscriptionResponse": {
+        "required": [
+          "message"
+        ],
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "ResponseCommonAddMemberSubscriptionResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/AddMemberSubscriptionResponse"
+          }
+        }
+      },
+      "VerifyRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "otp": {
+            "type": "string"
+          }
+        }
+      },
+      "EmailRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "ResetPasswordRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "otp": {
+            "type": "string"
+          },
+          "newPassword": {
+            "type": "string"
+          }
+        }
+      },
+      "RegisterRequest": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "ResponseCommonListRentResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RentResponse"
+            }
+          }
+        }
+      },
+      "LoanBookResponse": {
+        "type": "object",
+        "properties": {
+          "loanId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "borrowAt": {
+            "type": "string"
+          },
+          "returnAt": {
+            "type": "string"
+          },
+          "dueDate": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "bookCopyResponse": {
+            "$ref": "#/components/schemas/BookCopyResponse"
+          }
+        }
+      },
+      "ResponseCommonListLoanBookResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LoanBookResponse"
+            }
+          }
+        }
+      },
+      "ResponseCommonObject": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object"
+          }
+        }
+      },
+      "GetPaymentByUserResponse": {
+        "required": [
+          "amount",
+          "createdAt",
+          "membership",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "membership": {
+            "type": "string"
+          }
+        }
+      },
+      "ResponseCommonResponsePayment": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/ResponsePayment"
+          }
+        }
+      },
+      "ResponsePayment": {
+        "required": [
+          "listPayment"
+        ],
+        "type": "object",
+        "properties": {
+          "listPayment": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetPaymentByUserResponse"
+            }
+          }
+        }
+      },
+      "PaymentRes": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "vnp_TxnRef": {
+            "type": "string"
+          }
+        }
+      },
+      "ResponseCommonPaymentRes": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/PaymentRes"
+          }
+        }
+      },
+      "Benefits": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "memberBenefits": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MemberBenefit"
+            }
+          }
+        }
+      },
+      "Book": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string"
+          },
+          "desc": {
+            "type": "string"
+          },
+          "bookCopies": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BookCopy"
+            }
+          },
+          "reviews": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Review"
+            }
+          },
+          "imagePath": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "totalPage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "language": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "publicationYear": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ACTIVE",
+              "INACTIVE",
+              "AVAILABLE",
+              "OUT_OF_STOCK",
+              "BORROWED",
+              "LOST",
+              "DAMAGED",
+              "PENDING",
+              "REJECT",
+              "RETURNED",
+              "RETURNING"
+            ]
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreated": {
+            "$ref": "#/components/schemas/User"
+          },
+          "userUpdated": {
+            "$ref": "#/components/schemas/User"
+          },
+          "isbn": {
+            "type": "string"
+          }
+        }
+      },
+      "BookCopy": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "book": {
+            "$ref": "#/components/schemas/Book"
+          },
+          "loans": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Loan"
+            }
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "barcode": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ACTIVE",
+              "INACTIVE",
+              "AVAILABLE",
+              "OUT_OF_STOCK",
+              "BORROWED",
+              "LOST",
+              "DAMAGED",
+              "PENDING",
+              "REJECT",
+              "RETURNED",
+              "RETURNING"
+            ]
+          },
+          "createdBy": {
+            "$ref": "#/components/schemas/User"
+          },
+          "updatedBy": {
+            "$ref": "#/components/schemas/User"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "GrantedAuthority": {
+        "type": "object",
+        "properties": {
+          "authority": {
+            "type": "string"
+          }
+        }
+      },
+      "Loan": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bookCopy": {
+            "$ref": "#/components/schemas/BookCopy"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "borrowAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "returnAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dueDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ACTIVE",
+              "RETURNED",
+              "OVERDUE",
+              "RENEWED",
+              "LOST",
+              "DAMAGED",
+              "PENDING",
+              "REJECT",
+              "RETURNING"
+            ]
+          },
+          "note": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "MemberBenefit": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "$ref": "#/components/schemas/MemberBenefitKey"
+          },
+          "memberSubscription": {
+            "$ref": "#/components/schemas/MemberSubscription"
+          },
+          "benefits": {
+            "$ref": "#/components/schemas/Benefits"
+          }
+        }
+      },
+      "MemberBenefitKey": {
+        "type": "object",
+        "properties": {
+          "memberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "benefitId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "MemberSubscription": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nameSubscription": {
+            "type": "string"
+          },
+          "feeMember": {
+            "type": "number",
+            "format": "double"
+          },
+          "maxBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "expireDate": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreated": {
+            "$ref": "#/components/schemas/User"
+          },
+          "userUpdated": {
+            "$ref": "#/components/schemas/User"
+          },
+          "memberBenefits": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MemberBenefit"
+            }
+          },
+          "deleted": {
+            "type": "boolean"
+          }
+        }
+      },
+      "MembershipResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nameSubscription": {
+            "type": "string"
+          },
+          "feeMember": {
+            "type": "number",
+            "format": "double"
+          },
+          "maxBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "expireDate": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "userCreated": {
+            "$ref": "#/components/schemas/User"
+          },
+          "userUpdated": {
+            "$ref": "#/components/schemas/User"
+          },
+          "benefits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BenefitDTO"
+            }
+          },
+          "deleted": {
+            "type": "boolean"
+          }
+        }
+      },
+      "ResponseCommonListMembershipResponse": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MembershipResponse"
+            }
+          }
+        }
+      },
+      "Review": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/User"
+          },
+          "book": {
+            "$ref": "#/components/schemas/Book"
+          },
+          "rating": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "feedback": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "memberSubscription": {
+            "$ref": "#/components/schemas/MemberSubscription"
+          },
+          "reviews": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Review"
+            }
+          },
+          "fullName": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "ADMIN",
+              "LIBRARIAN",
+              "MEMBER"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "INACTIVE",
+              "ACTIVE"
+            ]
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "username": {
+            "type": "string"
+          },
+          "authorities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GrantedAuthority"
+            }
+          },
+          "accountNonLocked": {
+            "type": "boolean"
+          },
+          "credentialsNonExpired": {
+            "type": "boolean"
+          },
+          "accountNonExpired": {
+            "type": "boolean"
+          }
+        }
+      },
+      "ResponseCommonBoolean": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string"
+          },
+          "data": {
+            "type": "boolean"
+          }
+        }
+      },
+      "UserResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fullName": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "verified": {
+            "type": "boolean"
+          },
+          "membershipSubscriptionId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.login {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-logo img{
+    width: 120px;
+    height: 74.18px;
+}
+
+.login-title {
+    margin-bottom: 20px;
+}
+
+.login-title a {
+    color: #4D4D4D;
+    font-size: small;
+    font-weight: regular;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.login-title a:hover {
+    text-decoration: underline;
+}
+
+.login-title h6 {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-weight: regular;
+}
+
+.login-title .sub-title {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+    font-weight: regular;
+    color: #ABABAB;
+}
+
+.label {
+    font-size: small;
+}
+
+.field-input {
+    width: 100%;
+    height: 32px;
+    padding: 0 10px;
+    border: 1px solid #ABABAB;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: flex-end;
+    color: #4D4D4D;
+}
+
+.forgot-password a {
+    color: #4D4D4D;
+    text-decoration: none;
+    font-size: small;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.btn-login {
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+}
+
+.text-danger {
+    font-size: x-small;
+    word-wrap: break-word;
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    color: #ABABAB;
+    font-size: small;
+}
+
+.btn-login-google {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ABABAB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4D4D4D;
+    font-size: small;
+    text-decoration: none;
+    padding: 10px;
+}

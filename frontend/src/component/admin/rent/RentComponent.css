@@ -1,0 +1,17 @@
+.custom-tooltip {
+    background-color: white !important; /* Ensures the background color is white */
+    color: black !important; /* Ensures the text color is black */
+    border: 1px solid #ddd; /* Optional: Adds a light border */
+    padding: 5px; /* Optional: Adds padding */
+    font-size: 12px; /* Optional: Adjusts the font size */
+    max-width: 200px; /* Optional: Limits the width of the tooltip */
+}
+
+.custom-tooltip .tooltip-inner {
+    background-color: white !important; /* Ensures the background color inside the tooltip is white */
+    color: black !important; /* Ensures the text color inside the tooltip is black */
+}
+
+.custom-tooltip .tooltip-arrow {
+    display: none; /* Optional: Hides the arrow if not needed */
+}

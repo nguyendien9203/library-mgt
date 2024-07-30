@@ -1,0 +1,11 @@
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .book-item {
+    flex: 0 1 auto;
+    max-width: 8rem;
+  }
+  

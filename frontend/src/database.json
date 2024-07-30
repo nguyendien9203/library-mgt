@@ -1,0 +1,458 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "role": "LIBRARIAN",
+            "fullname": "Dien Nguyen",
+            "email": "dien@gmail.com",
+            "password": "hashed_password",
+            "phone_number": "1234567890",
+            "verified": true,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 2,
+            "role": "ADMIN",
+            "fullname": "Phuc Nguyen",
+            "email": "phuc@gmail.com",
+            "password": "hashed_password",
+            "phone_number": "9876543210",
+            "verified": true,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        }
+    ],
+    "authors": [
+        {
+            "id": 1,
+            "name": "Alex Banks",
+            "description": "Co-author of several programming books and expert in JavaScript.",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 2,
+            "name": "Eve Porcello",
+            "description": "Co-author of several programming books and expert in React.",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Douglas Crockford",
+            "description": "JavaScript architect and author of 'JavaScript: The Good Parts'.",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 4,
+            "name": "Kyle Simpson",
+            "description": "JavaScript expert and author of 'You Don't Know JS' series.",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 5,
+            "name": "Robert C. Martin",
+            "description": "Software engineer and author known for 'Clean Code'.",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 6,
+            "name": "Andrew Hunt",
+            "description": "Co-author of 'The Pragmatic Programmer' and software engineer.",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 7,
+            "name": "David Thomas",
+            "description": "Co-author of 'The Pragmatic Programmer' and software engineer.",
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Technology",
+            "parent_id": null,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 2,
+            "name": "Software Development",
+            "parent_id": 1,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Programming",
+            "parent_id": 1,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        },
+        {
+            "id": 4,
+            "name": "Computer Programming",
+            "parent_id": 1,
+            "created_by": 1,
+            "updated_by": 1,
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z"
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "category_id": 2,
+            "ISBN": "9781491954621",
+            "title": "Learning React",
+            "image": "https://m.media-amazon.com/images/I/91uFdkCJmAL._SL1500_.jpg",
+            "price": 927000,
+            "total_page": 350,
+            "language": "English",
+            "publisher": "O'Reilly Media",
+            "publicationYear": 2020,
+            "stock": 15,
+            "status": "Available",
+            "description": "A comprehensive guide to learning React programming.",
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z",
+            "authors": [
+                {
+                    "id": 1,
+                    "name": "Alex Banks",
+                    "description": "Co-author of several programming books and expert in JavaScript."
+                },
+                {
+                    "id": 2,
+                    "name": "Eve Porcello",
+                    "description": "Co-author of several programming books and expert in React."
+                }
+            ],
+            "samples": [
+                {
+                    "id": 1,
+                    "pdf_path": "path/to/pdf1.pdf",
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ],
+            "book_copies": [
+                {
+                    "id": 1,
+                    "book_id": 1,
+                    "barcode": "LRC001",
+                    "status": "Available",
+                    "created_by": 1,
+                    "updated_by": 1,
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                },
+                {
+                    "id": 2,
+                    "book_id": 1,
+                    "barcode": "LRC002",
+                    "status": "Borrowed",
+                    "created_by": 1,
+                    "updated_by": 1,
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "category_id": 2,
+            "ISBN": "9780596517748",
+            "title": "JavaScript: The Good Parts",
+            "image": "https://m.media-amazon.com/images/I/7185IMvz88L._SL1500_.jpg",
+            "price": 569000,
+            "total_page": 176,
+            "language": "English",
+            "publisher": "O'Reilly Media",
+            "publicationYear": 2008,
+            "stock": 8,
+            "status": "Available",
+            "description": "A guide to JavaScript best practices and design patterns.",
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z",
+            "authors": [
+                {
+                    "id": 3,
+                    "name": "Douglas Crockford",
+                    "description": "JavaScript architect and author of 'JavaScript: The Good Parts'."
+                }
+            ],
+            "samples": [
+                {
+                    "id": 2,
+                    "pdf_path": "path/to/pdf2.pdf",
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ],
+            "book_copies": [
+                {
+                    "id": 3,
+                    "book_id": 2,
+                    "barcode": "JSGP001",
+                    "status": "Available",
+                    "created_by": 1,
+                    "updated_by": 1,
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "category_id": 2,
+            "ISBN": "9781449331818",
+            "title": "You Don't Know JS",
+            "image": "https://m.media-amazon.com/images/I/71GsZGf3opL._SL1500_.jpg",
+            "price": 379000,
+            "total_page": 278,
+            "language": "English",
+            "publisher": "O'Reilly Media",
+            "publicationYear": 2015,
+            "stock": 12,
+            "status": "Out of Stock",
+            "description": "An in-depth exploration of JavaScript concepts and pitfalls.",
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z",
+            "authors": [
+                {
+                    "id": 4,
+                    "name": "Kyle Simpson",
+                    "description": "JavaScript expert and author of 'You Don't Know JS' series."
+                }
+            ],
+            "samples": [
+                {
+                    "id": 3,
+                    "pdf_path": "path/to/pdf3.pdf",
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ],
+            "book_copies": [
+                {
+                    "id": 4,
+                    "book_id": 3,
+                    "barcode": "YDKJS001",
+                    "status": "Available",
+                    "created_by": 1,
+                    "updated_by": 1,
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "category_id": 3,
+            "ISBN": "9780132350884",
+            "title": "Clean Code",
+            "image": "https://m.media-amazon.com/images/I/51E2055ZGUL._SL1000_.jpg",
+            "price": 989000,
+            "total_page": 464,
+            "language": "English",
+            "publisher": "Prentice Hall",
+            "publicationYear": 2008,
+            "stock": 20,
+            "status": "Available",
+            "description": "A guide to writing clean, maintainable code.",
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z",
+            "authors": [
+                {
+                    "id": 5,
+                    "name": "Robert C. Martin",
+                    "description": "Software engineer and author known for 'Clean Code'."
+                }
+            ],
+            "samples": [
+                {
+                    "id": 4,
+                    "pdf_path": "path/to/pdf4.pdf",
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ],
+            "book_copies": [
+                {
+                    "id": 5,
+                    "book_id": 4,
+                    "barcode": "CC001",
+                    "status": "Available",
+                    "created_by": 1,
+                    "updated_by": 1,
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "category_id": 4,
+            "ISBN": "9780201616224",
+            "title": "The Pragmatic Programmer",
+            "image": "https://m.media-amazon.com/images/I/61ztlXgCmpL._SL1500_.jpg",
+            "price": 1012000,
+            "total_page": 352,
+            "language": "English",
+            "publisher": "Addison-Wesley Professional",
+            "publicationYear": 1999,
+            "stock": 10,
+            "status": "Available",
+            "description": "A practical guide to software development principles and practices.",
+            "created_at": "2023-06-23T12:00:00Z",
+            "updated_at": "2023-06-23T12:00:00Z",
+            "authors": [
+                {
+                    "id": 6,
+                    "name": "Andrew Hunt",
+                    "description": "Co-author of 'The Pragmatic Programmer'."
+                },
+                {
+                    "id": 7,
+                    "name": "David Thomas",
+                    "description": "Co-author of 'The Pragmatic Programmer'."
+                }
+            ],
+            "samples": [
+                {
+                    "id": 5,
+                    "pdf_path": "path/to/pdf5.pdf",
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                },
+                {
+                    "id": 6,
+                    "pdf_path": "path/to/pdf6.pdf",
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ],
+            "book_copies": [
+                {
+                    "id": 6,
+                    "book_id": 5,
+                    "barcode": "TPP001",
+                    "status": "Available",
+                    "created_by": 1,
+                    "updated_by": 1,
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                },
+                {
+                    "id": 7,
+                    "book_id": 5,
+                    "barcode": "TPP002",
+                    "status": "Available",
+                    "created_by": 1,
+                    "updated_by": 1,
+                    "created_at": "2023-06-23T12:00:00Z",
+                    "updated_at": "2023-06-23T12:00:00Z"
+                }
+            ]
+        }
+    ],
+    "benefits": [
+        {
+            "id": 1,
+            "name": "Free Access to E-books",
+            "description": "Enjoy unlimited access to our extensive e-book collection.",
+            "numberOfRent": 0
+        },
+        {
+            "id": 2,
+            "name": "Can rent totally 2 book per a month",
+            "description": "Get a 10% discount on all physical book purchases.",
+            "numberOfRent": 2
+        },
+        {
+            "id": 3,
+            "name": "Can rent totally 6 book per a month",
+            "description": "Get a 10% discount on all physical book purchases.",
+            "numberOfRent": 6
+        },
+        {
+            "id": 4,
+            "name": "Can rent totally 10 book per a month",
+            "description": "Get a 10% discount on all physical book purchases.",
+            "numberOfRent": 10
+        },
+        {
+            "id": 5,
+            "name": "Priority Reservations",
+            "description": "Reserve books in advance before they are available to other members.",
+            "numberOfRent": 0
+        },
+        {
+            "id": 6,
+            "name": "Exclusive Events Invitations",
+            "description": "Receive invitations to exclusive library events.",
+            "numberOfRent": 0
+        }
+    ],
+    "membership_benefits": [
+        {
+            "membershipId": 1,
+            "benefitIds": [
+                1,
+                2
+            ]
+        },
+        {
+            "membershipId": 2,
+            "benefitIds": [
+                1,
+                3
+            ]
+        },
+        {
+            "membershipId": 3,
+            "benefitIds": [
+                1,
+                4,
+                5
+            ]
+        },
+        {
+            "membershipId": 4,
+            "benefitIds": [
+                1,
+                4,
+                5,
+                6
+            ]
+        }
+    ]
+}

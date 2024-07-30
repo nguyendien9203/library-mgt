@@ -1,0 +1,37 @@
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: #000;
+    font-size: small !important;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: "1px solid #DEDEE1";
+    z-index: 1000;
+    min-width: 200px;
+    font-size: small !important;
+    transition: display 0.3s ease;
+}
+
+.nav-link:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: #000 !important;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
